@@ -1,0 +1,208 @@
+:root {
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very_pale_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --dark_blue: hsl(223, 47%, 23%);
+}
+
+/* Beginning of reset CSS with minor changes recommended by Kevin Powell */
+/* see youtube https://www.youtube.com/watch?v=h3bTwCqX4ns */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] { 
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Deviation from KPowell*/
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* End of reset CSS*/
+
+
+/* Attribution is for the fem footer */
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+ /* setting the initial content attributes here */
+ /* start initial design with mobile design first */
+ body {
+  background-image: url(images/pattern-background-desktop.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+section {
+  background-color: white;
+  width: 320px;
+  max-width: 450;
+  border-radius: 0 0 5px 5px;
+}
+
+img {
+  /* round the top two corners of the image */
+  border-radius: 5px 5px 0 0;
+}
+
+.order-summary {
+  text-align: center;
+  font-family: var(--font-red-hat);
+  font-weight: 900;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: var(--desaturated_blue);
+}
+
+.plan-details {
+  padding: 10px;
+  margin: 30px;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 75px;
+ 
+  background-color: var(--very_pale_blue);
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.aplan p {
+  color: var(--desaturated_blue);
+}
+
+.change {
+  font-size: 12px;
+}
+
+
+.make-payment-btn {
+  display: flex;
+}
+
+
+.mp-btn {
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 90%;
+  color: white;
+  font-size: 12px;
+  padding: 0.5em 1em;
+  text-align: center;
+  margin: auto;
+  border-radius: .5em;
+  background: var(--bright-blue);
+  cursor: pointer;
+  border: none;
+  /* horizontal vertical blur start blur  */
+  box-shadow: 0px 5px 10px 0px gray;
+  text-decoration: none;
+}
+
+
+.mp-btn:hover {
+  background-color: var(--pale-blue);
+  color: var(--bright-blue);
+}
+
+.cancel-payment-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.cancel-btn {
+  margin-bottom: 15px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
