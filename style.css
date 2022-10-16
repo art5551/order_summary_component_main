@@ -91,7 +91,7 @@ svg {
  /* setting the initial content attributes here */
  /* start initial design with mobile design first */
  body {
-  background-image: url(images/pattern-background-mobile.svg);
+  background-image: url(images/pattern-background-desktop.svg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +103,8 @@ svg {
 section {
   background-color: white;
   min-width: 350px;
-  max-width: 450;
+  max-width: 350px;
+  margin: 15px;
   border-radius: 0 0 5px 5px;
 }
 
@@ -205,10 +206,3 @@ h2 {
   text-decoration: none;
 }
 
-@media (min-width: 450px) {
-
-  body {
-    background-image: url(images/pattern-background-desktop.svg);
-  }
-
-}
