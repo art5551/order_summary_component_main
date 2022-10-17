@@ -98,6 +98,9 @@ svg {
   width: 100%;
   min-height: 100vh;
   font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225deg, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 section {
